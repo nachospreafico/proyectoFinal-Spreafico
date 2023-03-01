@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Aniron";
+  src: url("/src/font/Aniron.ttf");
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+  background-color: antiquewhite;
+  margin: 0;
+  padding: 0;
+}
+
+.container li {
+  text-align: center;
+  list-style: none;
+  background-color: rgb(255, 226, 183);
+  border: solid 4px rgb(110, 29, 29);
+  border-top: none;
+  margin-bottom: none;
+}
+
+.container li a {
+  text-decoration: none;
+  font-family: Aniron;
+  color: rgb(110, 29, 29);
+  font-size: x-large;
+  font-weight: 700;
+  width: max-content;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.cart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
