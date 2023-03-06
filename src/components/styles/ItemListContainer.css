@@ -1,5 +1,6 @@
 .mensaje {
   text-align: center;
+  font-weight: 700;
   font-family: Aniron;
   color: rgb(110, 29, 29);
   font-style: italic;
@@ -7,4 +8,5 @@
 
 .author {
   font-style: normal;
+  font-weight: 700;
 }

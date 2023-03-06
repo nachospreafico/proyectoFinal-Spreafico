@@ -1,12 +1,12 @@
 import "./styles/NavBar.css";
-import Cart from "./CartWidget.jsx";
+import CartWidget from "./CartWidget.jsx";
 
 const NavBar = () => {
   return (
     <div>
       <ul className="container">
         <li className="item-1">
-          <a href="#">Rings</a>
+          <a href="#">Rings of Power</a>
         </li>
         <li className="item-2">
           <a href="#">Hobbit Pipes</a>
@@ -15,10 +15,10 @@ const NavBar = () => {
           <a href="#">Lembas Bread</a>
         </li>
         <li className="item-4">
-          <a href="#">Maps</a>
+          <a href="#">Maps & Lore</a>
         </li>
         <li>
-          <Cart />
+          <CartWidget />
         </li>
       </ul>
     </div>

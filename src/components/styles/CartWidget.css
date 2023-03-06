@@ -1,25 +1,85 @@
-.cart {
-  position: relative;
-  cursor: pointer;
-  text-align: center;
-  width: 15%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 8px;
-  margin-bottom: auto;
+@media only screen and (max-device-width: 768px) {
+  .cart {
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    width: 8%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    margin-bottom: auto;
+  }
+
+  #items-qty {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: brown;
+    margin-top: 5px;
+    position: absolute;
+    text-align: center;
+    line-height: 17px;
+  }
 }
 
-#items-qty {
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  background-color: white;
-  border-radius: 50%;
-  font-size: 15px;
-  font-weight: 700;
-  font-family: Arial, Helvetica, sans-serif;
-  color: brown;
-  position: absolute;
-  text-align: center;
-  line-height: 17px;
+@media only screen and (max-device-width: 480px) {
+  .cart {
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    width: 12%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    margin-bottom: auto;
+  }
+
+  #items-qty {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: brown;
+    margin-top: 5px;
+    position: absolute;
+    text-align: center;
+    line-height: 17px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .cart {
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    margin-bottom: auto;
+  }
+
+  #items-qty {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: brown;
+    position: absolute;
+    text-align: center;
+    line-height: 17px;
+  }
 }
