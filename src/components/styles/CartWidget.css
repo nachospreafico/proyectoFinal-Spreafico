@@ -1,85 +1,80 @@
-@media only screen and (max-device-width: 768px) {
-  .cart {
-    position: relative;
-    cursor: pointer;
-    text-align: center;
-    width: 8%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 8px;
-    margin-bottom: auto;
-  }
-
-  #items-qty {
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    background-color: white;
-    border-radius: 50%;
-    font-size: 15px;
-    font-weight: 700;
-    font-family: Arial, Helvetica, sans-serif;
-    color: brown;
-    margin-top: 5px;
-    position: absolute;
-    text-align: center;
-    line-height: 17px;
-  }
+.cart {
+  cursor: pointer;
+  text-align: center;
+  width: 11%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
 }
 
-@media only screen and (max-device-width: 480px) {
-  .cart {
-    position: relative;
-    cursor: pointer;
-    text-align: center;
-    width: 12%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 8px;
-    margin-bottom: auto;
-  }
-
-  #items-qty {
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    background-color: white;
-    border-radius: 50%;
-    font-size: 15px;
-    font-weight: 700;
-    font-family: Arial, Helvetica, sans-serif;
-    color: brown;
-    margin-top: 5px;
-    position: absolute;
-    text-align: center;
-    line-height: 17px;
-  }
+#items-qty {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 50%;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  color: brown;
+  position: absolute;
+  text-align: center;
+  line-height: 17px;
 }
 
-@media only screen and (min-width: 1280px) {
-  .cart {
-    position: relative;
-    cursor: pointer;
-    text-align: center;
-    width: 15%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 8px;
-    margin-bottom: auto;
-  }
+#items-qty p {
+  margin-top: 5px;
+}
 
-  #items-qty {
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    background-color: white;
-    border-radius: 50%;
-    font-size: 15px;
-    font-weight: 700;
-    font-family: Arial, Helvetica, sans-serif;
-    color: brown;
-    position: absolute;
-    text-align: center;
-    line-height: 17px;
-  }
+.cart-tooltip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  width: fit-content;
+  height: fit-content;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+
+.tooltip-item-container {
+  display: grid;
+  width: fit-content;
+  height: fit-content;
+  grid-template-columns: repeat(5, 1fr);
+  border: solid 1px grey;
+  border-radius: 5px;
+  justify-self: center;
+  align-items: center;
+  margin: 3px;
+  background-color: #ece9e9;
+}
+
+.tooltip-title {
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-family: Ringbearer;
+  font-size: 2rem;
+}
+
+.tooltip-header {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: fit-content;
+  height: fit-content;
+  align-items: end;
+}
+
+.tooltip-header p {
+  margin: 0;
+}
+
+.tooltip-item-container p {
+  font-size: 0.75rem;
+  margin: 0;
 }

@@ -1,12 +1,82 @@
-.mensaje {
-  text-align: center;
-  font-weight: 700;
-  font-family: Aniron;
-  color: rgb(110, 29, 29);
-  font-style: italic;
+@font-face {
+  font-family: "Aniron";
+  src: url("/src/font/Aniron.ttf");
+}
+@font-face {
+  font-family: "Celtic";
+  src: url("/src/font/AONCC___.TTF");
 }
 
-.author {
-  font-style: normal;
-  font-weight: 700;
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+  margin: 5px;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.8fr auto auto;
+  gap: 0px 0px;
+  grid-template-areas:
+    "card-body"
+    "controls"
+    "stock";
+  text-align: center;
+  border: 3px solid rgb(110, 29, 29);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 5px;
+  font-family: Aniron;
+  background-color: rgb(255, 226, 183);
+  margin-bottom: 0;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 1rem;
+  margin-top: 2px;
+  margin-bottom: 0;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.card-text {
+  font-family: Celtic;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.stock {
+  margin: 0;
+  grid-area: stock;
+}
+
+.card-body {
+  grid-area: card-body;
+}
+.controls {
+  grid-area: controls;
 }

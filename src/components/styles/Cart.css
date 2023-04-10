@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "Aniron";
+  src: url("/src/font/Aniron.ttf");
+}
+@font-face {
+  font-family: "Celtic";
+  src: url("/src/font/AONCC___.TTF");
+}
+@font-face {
+  font-family: "Ringbearer";
+  src: url("/src/font/Ringbearer.ttf");
+}
+.cart-container {
+  padding: 10px;
+  gap: 10px;
+}
+
+.cart-container .card {
+  width: 20%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.8fr auto auto;
+  gap: 0px 0px;
+  grid-template-areas:
+    "card-body"
+    "controls"
+    "stock";
+  text-align: center;
+  border: 3px solid rgb(110, 29, 29);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 5px;
+  font-family: Aniron;
+  background-color: rgb(255, 226, 183);
+  margin-bottom: 0;
+  align-items: center;
+}
+
+.cart-container .cart-container .card-title {
+  font-size: 1rem;
+  margin-top: 2px;
+  margin-bottom: 0;
+}
+
+.cart-container .card:hover {
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.cart-container .card-text {
+  font-family: Celtic;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+.cart-container li {
+  list-style: none;
+}
+
+.cart-container img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.cart-container .card-body {
+  grid-area: card-body;
+}
+.cart-container .controls {
+  grid-area: controls;
+}
+
+.cart-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 10px;
+  align-items: center;
+  justify-items: center;
+}
+
+.clear-cart {
+  margin-top: 10px;
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.75rem;
+}
+
+.cart-total-price {
+  font-family: "Celtic";
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.empty-cart-message {
+  font-family: "Ringbearer";
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.go-back-button {
+  font-family: "Ringbearer";
+  text-align: center;
+  font-size: 1.75rem;
+  margin-top: 20px;
+  width: fit-content;
+  padding: 10px;
+}
+
+.checkout-button {
+  font-family: "Celtic";
+  text-align: center;
+  font-size: 1.75rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  padding: 10px;
+}

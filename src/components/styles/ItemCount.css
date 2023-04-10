@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Celtic";
+  src: url("/src/font/AONCC___.TTF");
+}
+.controls {
+  display: grid;
+  width: 25%;
+  grid-template-columns: 0.15fr 0.15fr 0.15fr 0.55fr;
+  background-color: rgb(255, 226, 183);
+  gap: 1px;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  align-items: center;
+  border: 3px solid rgb(110, 29, 29);
+  border-radius: 5px;
+}
+
+button,
+.item-count {
+  font-family: Celtic;
+  font-weight: 1000;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+}
+
+button:hover {
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+button {
+  border-radius: 10px;
+  margin: 2px;
+}
+
+.count-divs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+}
+
+.stock-error-wrapper {
+  height: fit-content;
+}
+
+.stock-error {
+  font-family: Celtic;
+  position: relative;
+  grid-row: 1;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  text-align: center;
+  font-size: 1.25rem;
+  margin: 0;
+}

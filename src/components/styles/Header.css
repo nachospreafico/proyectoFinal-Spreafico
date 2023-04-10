@@ -1,22 +1,76 @@
-.header {
-  display: grid;
-  grid-template-columns: 0.3fr 0.7fr;
-  background-color: antiquewhite;
-  background-image: url("./assets/Middle-Earth.jpg");
-  background-position: center;
+@media only screen and (max-width: 768px) and (min-width: 479px) {
+  .header {
+    display: grid;
+    grid-template-columns: 0.25fr 0.75fr;
+    background-color: antiquewhite;
+    background-image: url("src/assets/Middle-Earth.jpg");
+    background-position: center;
+  }
+
+  .titulo {
+    font-family: Ringbearer;
+    text-align: center;
+    font-size: 3.5rem;
+    color: antiquewhite;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  #logo {
+    width: 100%;
+  }
 }
 
-.titulo {
-  font-family: Ringbearer;
-  text-align: center;
-  font-size: 35px;
-  color: antiquewhite;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
+@media only screen and (min-device-width: 1280px) {
+  .header {
+    display: grid;
+    grid-template-columns: 0.2fr 0.8fr;
+    background-color: antiquewhite;
+    background-image: url("/src/assets/Middle-Earth.jpg");
+    background-position: center;
+  }
+
+  .titulo {
+    font-family: Ringbearer;
+    text-align: center;
+    font-size: 6.5rem;
+    color: antiquewhite;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  #logo {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 85%;
+  }
 }
 
-#logo {
-  width: 100%;
+@media only screen and (max-device-width: 480px) {
+  .header {
+    display: grid;
+    grid-template-columns: 0.33fr 0.67fr;
+    background-color: antiquewhite;
+    background-image: url("src/assets/Middle-Earth.jpg");
+    background-position: center;
+  }
+
+  .titulo {
+    font-family: Ringbearer;
+    text-align: center;
+    font-size: 2.5rem;
+    color: antiquewhite;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  #logo {
+    width: 100%;
+  }
 }
